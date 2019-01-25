@@ -6,6 +6,9 @@ var variableTypeDefault;
 dynamic dynamicTypeDefault;
 String StringTypeDefault;
 
+final finalString = "Final String";
+const constString = "Const String";
+
 main(List<String> args) {
   print(variableType.runtimeType);  // String
   print(dynamicType.runtimeType);   // String
@@ -19,6 +22,7 @@ main(List<String> args) {
   dynamicType = 1234;
   // StringType = 1234;   Type Change Warning Error
 
-  print(dynamicType.runtimeType);
+  // finalString = "Change Value" Final Type Not Change
+  // constString = "Change Value" Const Type Not Change
 
 }

@@ -7,13 +7,13 @@ dynamic dynamicTypeDefault;
 String StringTypeDefault;
 
 main(List<String> args) {
-  print(variableType.runtimeType);
-  print(dynamicType.runtimeType);
-  print(StringType.runtimeType);
+  print(variableType.runtimeType);  // String
+  print(dynamicType.runtimeType);   // String
+  print(StringType.runtimeType);   // String
 
-  print(variableTypeDefault.runtimeType);
-  print(dynamicTypeDefault.runtimeType);
-  print(StringTypeDefault.runtimeType);
+  print(variableTypeDefault.runtimeType); //null
+  print(dynamicTypeDefault.runtimeType);  //null
+  print(StringTypeDefault.runtimeType);   //null
 
   // variableType = 1234; Type Change Warning Error 
   dynamicType = 1234;
